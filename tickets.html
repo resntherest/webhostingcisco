@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Availability</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #BE2C51;
+            overflow: hidden;
+            position: relative;
+            transition: background-color 2.5s ease-in-out;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: black;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .popup-content {
+            text-align: center;
+            color: white;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #1DB954;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        @keyframes move {
+            0%, 100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <p>Tickets currently unavailable, please try again later.</p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                var popup = document.getElementById("popup");
+                popup.style.display = "block";
+                popup.offsetHeight;
+                popup.style.opacity = 1;
+            }, 1000);
+
+            setInterval(changeBackgroundColor, 5000);
+        });
+
+        function changeBackgroundColor() {
+            var body = document.body;
+            body.style.backgroundColor = "#1DB954";
+            setTimeout(function () {
+                body.style.backgroundColor = "#bdac0d";
+            }, 2500);
+        }
+
+        function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.opacity = 0;
+            setTimeout(function () {
+                popup.style.display = "none";
+                window.location.href = "./index.html";
+            }, 300);
+        }
+    </script>
+</body>
+
+</html>

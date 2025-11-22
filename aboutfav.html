@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changing Page</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            transition: background-color 2.5s ease-in-out;
+        }
+
+        img {
+            position: fixed;
+            width: 680px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- R.DAGSAN BSCPE3-1 -->
+<img src="aboutfav.png" alt="Centered Image">
+
+<script>
+    let colors = ['#D6CAAF', 'black', '#C0A53C', 'black', '#D6CAAF', 'black', '#1DB954', 'black', '#BE2C51', 'black', 'white', 'black'];
+    let currentIndex = 0;
+
+
+    function changeBackgroundColor() {
+        document.body.style.backgroundColor = colors[currentIndex];
+        currentIndex = (currentIndex + 1) % colors.length;
+        setTimeout(changeBackgroundColor, 5000);
+    }
+
+    // Initial call to start the color change
+    changeBackgroundColor();
+</script>
+
+</body>
+</html>

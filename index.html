@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+       
+
+
+    </head>
+
+
+    <body>
+        <section class="sec">
+            <header>
+                <a href="#"><img src="logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="index.html" id="colorh">Home  </a></li>
+                   
+                    <li><a href="SIDEONE.html">Side One</a></li>
+                    <li><a href="SIDETWO.html">Side Two</a></li>
+                    
+                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="aboutfav.html">About</a></li>
+                    
+                    
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <p>  If you want to have your</p>
+                    
+                    <h2> <span id="favorite"> Favorite </span> <br> <span class="worst"> Worst </span><br> 
+                        <span class= "Nightmare"> Nightmare</span> </h2>
+
+                    <p> then you should probably</p>
+                    <a href="sleep.html">sleep</a>
+                </div>
+
+                <div class="imgBox">
+                    <img src="pinkpeople.png" class="pepsi" >
+                </div>
+
+            </div>
+            <ul class="thumb">
+              
+  
+                    <li><img src="1button.png" onclick="imgSlider('frontcd.png', 'black', '#DAC302', '#DAC302', 'white', 'white')"></li>
+                    <li><img src="2button.png" onclick="imgSlider('yellowcdwithgreen.png', '	#be2c51', 'black', 'black', 'white', 'white')"></li>
+                    <li><img src="3button.png" onclick="imgSlider('backcdd.png', 'black', '#A23677', '#A23677', 'white', 'white')"></li>
+
+                
+                
+            </ul>
+            <ul class="members">
+                <li><a href=""><img src="facebook.png" alt=""></a></li>
+                <li><a href=""><img src="instagram.png" alt=""></a></li>
+                <li><a href=""><img src="twitter.png" alt=""></a></li>
+            </ul>
+
+
+
+
+
+
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything, bgColor, worstColor, paragraphColor, favoriteColor, nightmareColor) {
+                    const imageElement = document.querySelector('.pepsi');
+                    const sec = document.querySelector('.sec');
+                    const h2 = document.querySelector('.worst');
+                    const favorite = document.getElementById('favorite');
+                    const nightmare = document.querySelector('.Nightmare');
+                    const paragraphs = document.querySelectorAll('.textbox p');
+
+                sec.style.backgroundColor = bgColor;
+                h2.style.color = worstColor;
+
+                // Paragraph
+                paragraphs.forEach(paragraph => {
+                    paragraph.style.color = paragraphColor;
+                });
+                // Favorite
+                favorite.style.color = favoriteColor;
+                // Nightmare
+                nightmare.style.color = nightmareColor;
+
+                
+                imageElement.src = anything;
+
+
+
+
+                
+                if (anything === 'yellowcdwithgreen.png') {
+                    void imageElement.offsetWidth;
+                    imageElement.classList.add('paikutin-natin-yan-boi');
+                } else {               
+                    imageElement.classList.remove('paikutin-natin-yan-boi');
+                }
+            }
+
+
+            function changeBgColor(color){
+                const sec = document.querySelector('.sec');
+            sec.style.backgroundColor = color;  
+                }
+        </script>
+        
+        
+            
+    </body>
+</html>

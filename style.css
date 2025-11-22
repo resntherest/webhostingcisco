@@ -1,0 +1,250 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+
+
+body{
+    overflow: hidden;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: 	#1DB954;
+    transition: 0.5s;
+
+}   
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}   
+
+header .logo{
+    position: relative;
+    max-width: flex;
+
+}
+
+.logo {
+    width: 101px;
+    height: 101px;
+}
+
+
+header ul{
+    position: relative;
+    display: flex;
+
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+
+header ul li a:hover {
+    color: #DAC302; 
+}
+
+#colorh{
+    color: #DAC302;
+}
+
+.content{
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textbox h2{
+    color: #ffffff;
+    font-size: 2.9em;
+    line-height: 1.5em;
+    font-weight: 950;
+    text-transform: uppercase;
+    
+}
+
+.content .textbox p{
+    color: white;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 4;
+    
+    
+}
+
+
+
+
+
+#favorite {
+    font-size: 1.2em;
+    color: black;
+}
+.Nightmare {
+    color:black;
+}
+
+.content .textbox h2 .worst {
+    margin-left: -10px;
+    color: white;
+    font-size: 2.9em;
+    line-height: 1em;
+}
+
+.content .textbox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: white;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Change 'Your Desired Font' to the desired font-family */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Add transition for transform and background-color */
+
+}
+
+.content .textbox a:hover {
+    transform: scale(1.1); /* Scale the link to 110% on hover */
+    background-color: black; /* Change the background color on hover */
+    color: white; /* Change the text color on hover */
+}
+
+
+.content .imgBox{   
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+
+.content .imgBox img{
+    max-width: 500px;
+}
+
+
+
+
+
+
+
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li:hover{
+    transform: translateY(-15px)
+}
+
+.thumb li img{
+    max-width: 40px;
+}
+
+.paikutin-natin-yan-boi {
+    animation: spin 10s infinite linear;
+    transform-origin: center;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+.members{
+    position: absolute;
+    top: 47%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    flex-direction: column;
+}
+
+.members li {
+    list-style: none;
+}
+
+.members li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6)
+}
+
+.members li a img:hover{
+    transform: translateX(-20px);
+    scale: 0.5s 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
