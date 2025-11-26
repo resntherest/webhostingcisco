@@ -1,3 +1,29 @@
-This project contains files for Cisco Packet Tracer and web hosting exercises.
+# Cisco Packet Tracer & Web Hosting 
 
-Note: The images are not organized into separate folders. Originally, the code was created with organized folders, but Cisco Packet Tracer does not support folder structures for uploaded files. In typical code, images in another folder would be called using a path like foldername/image.png. If the image is in the same folder as the main file (e.g., index.html), it can be called directly like image.png. To make everything work correctly in Cisco Packet Tracer, all images had to be placed in a single folder.
+This repository contains files and activities related to **Cisco Packet Tracer networking exercises** and **web hosting fundamentals**, combining networking concepts with simple front-end development.
+
+These project demonstrate how a website can be hosted and accessed inside Cisco Packet Tracer’s simulated network environment.
+
+---
+
+## Important Note on Image Organization
+
+Cisco Packet Tracer **does not support folder structures** for uploaded website files.  
+Because of this:
+
+- All images must be placed **in the same folder** as the main HTML file (e.g., `index.html`).  
+- Normally, in real-world web development, images would be stored in organized folders like:
+
+--- 
+ # Tech Stack
+<p align="left"> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> </a> <a href="https://www.netacad.com/courses/packet-tracer"> <img src="https://img.shields.io/badge/Cisco_Packet_Tracer-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white"> </a> </p>
+
+--- 
+
+ # Preview
+📌 Screenshot 1
+<img src="1.png" width="800">
+📌 Screenshot 2
+<img src="2.png" width="800">
+📌 Screenshot 3
+<img src="3.png" width="800">
