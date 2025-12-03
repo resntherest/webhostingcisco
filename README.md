@@ -12,7 +12,7 @@ Cisco Packet Tracer **does not support folder structures** for uploaded website 
 Because of this:
 
 - All images must be placed **in the same folder** as the main HTML file (e.g., `index.html`).  
-- Normally, in real-world web development, images would be stored in organized folders like:
+- Normally, in real-world web development, images would be stored in organized folders.
 
 --- 
  # Tech Stack
